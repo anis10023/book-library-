@@ -10,14 +10,22 @@
 <body>
     <header>
         <h1>Book Library</h1>
-        <input type="text" placeholder="Title" name="Title" id = "title" required>
-        <input type="text" placeholder="Author" name="Author" id = "author" required>
-        <input type="number" placeholder="No. of Pages" name="Pages" id = "pages" required>
-        <button type="submit">Add Your Book</button>
+        <button id="addBook" type="submit">Add Your Book</button>
+        <div class="dialog-wrapper">
+            <dialog id="bookDialog">
+                <form>
+                    <input type="text" placeholder="Title" name="Title" id="title">
+                    <input type="text" placeholder="Author" name="Author" id="author">
+                    <input type="number" placeholder="No. of Pages" name="Pages" id="pages">
+                  <div class="btn-wrapper">
+                    <button id= "cancelBtn" value="cancel" formmethod="dialog">Cancel</button>
+                    <button id="confirmBtn" value="default">Confirm</button>
+                  </div>
+                </form>
+            </dialog>
+        </div>
     </header>
     <main>
-
     </main>
-    
 </body>
 </html>
